@@ -25,7 +25,10 @@ body {
 /* Header Section Start  */
 #header {
     padding: 0px;
-    background-color: linear-gradient(145deg, #e2e8ec, #ffffff);
+    background-color: #e7ecef;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
 }
 
 .bg-body-tertiary {
@@ -51,21 +54,24 @@ li.nav-item a:hover {
 }
 
 button.btn.btn-outline-success {
-    border-color: #ff014f !important;
-    color: #ff014f !important;
+    border-color: #fda82a !important;
+    color: #ffa72c !important;
     padding: 5px 18px !important;
     font-size: 18px !important;
     transition: all .4s ease-in-out;
 }
 
 button.btn.btn-outline-success:hover {
-    background: #ff014f;
+    background: #fda62e;
     color: white !important;
 }
 
 /* Header Section End  */
 /* Main Section Start  */
 /* Hero Section Start  */
+#hero{
+    margin-top: 100px;
+}
 .hero-main-box {
     width: 100%;
     display: flex;
@@ -81,7 +87,7 @@ button.btn.btn-outline-success:hover {
 }
 
 .top-title {
-    color: #ff014f;
+    color: #f9ab46;
     font-weight: 500;
     font-size: 25px;
 }
@@ -150,13 +156,13 @@ button.btn.btn-outline-success:hover {
 }
 
 .find-me-and-my-skil-left-main-box-sub:hover {
-    background: linear-gradient(145deg, #ff014f, #d11414);
+    background: linear-gradient(145deg, #fba827, #9d6814);
     transform: translateY(-5px);
 }
 
 .find-me-and-my-skil-left-main-box-sub i {
     font-size: 29px;
-    color: #ff014f;
+    color: #fca926;
 }
 
 .find-me-and-my-skil-left-main-box-sub:hover i {
@@ -196,7 +202,7 @@ button.btn.btn-outline-success:hover {
 }
 
 .feature-heading {
-    color: #ff014f;
+    color: #fca926;
     font-weight: 500;
     font-size: 25px;
 }
@@ -230,7 +236,7 @@ button.btn.btn-outline-success:hover {
 }
 
 .services-main-box-sub-box:hover {
-    background: linear-gradient(145deg, #ff014f, #d11414);
+    background: linear-gradient(145deg, #fea520, #9d6814);
 }
 
 .services-main-box-sub-box:hover .services-sub-heading {
@@ -254,7 +260,7 @@ p.services-sub-description {
 
 .services-main-box-sub-box i {
     font-size: 70px;
-    color: #ff014f;
+    color: #ffa72a;
     margin-bottom: 15px;
 }
 
@@ -278,7 +284,7 @@ p.services-sub-description {
 
 .portfolio-main-box-sub-box {
     width: 430px;
-    height: 450px;
+    height: 480px;
     background: linear-gradient(145deg, #e2e8ec, #ffffff);
     box-shadow: 2px 2px 10px black;
     border-radius: 15px;
@@ -294,6 +300,7 @@ p.services-sub-description {
     /* border: 2px solid purple; */
     overflow: hidden;
     margin-bottom: 15px;
+    border: 2px solid #ffa623;
 }
 
 .portfolio-images {
@@ -308,7 +315,7 @@ p.services-sub-description {
 .portfolio-title {
     margin-top: 21px;
     font-size: 20px;
-    color: #ff014f;
+    color: #ffa82e;
     font-weight: 600;
 }
 
@@ -317,148 +324,479 @@ p.services-sub-description {
     margin-top: 10px;
     font-weight: 500;
 }
-.reviews-main-box{
+
+.reviews-main-box {
     width: 100%;
     margin-top: 40px;
 }
+
 /* TESTIMONIAL CSS START */
 .testimonial-container {
-      width: 1000px;
-      max-width: 95%;
-      position: relative;
-      margin: auto;
-    }
+    width: 1000px;
+    max-width: 95%;
+    position: relative;
+    margin: auto;
+}
 
-    .testimonial-slide {
-      display: flex;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-      overflow: hidden;
-      padding: 20px;
-      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-    }
+.testimonial-slide {
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
-    .testimonial-slide.active {
-      opacity: 1;
-      position: relative;
-    }
+.testimonial-slide.active {
+    opacity: 1;
+    position: relative;
+}
 
-    .testimonial-left {
-      flex: 1;
-      padding: 20px;
-      text-align: center;
-    }
+.testimonial-left {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
 
-    .testimonial-left img {
-      width: 100%;
-      border-radius: 10px;
-    }
+.testimonial-left img {
+    width: 100%;
+    border-radius: 10px;
+}
 
-    .testimonial-left h3 {
-      margin-top: 15px;
-      font-size: 20px;
-      font-weight: bold;
-    }
+.testimonial-left h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
 
-    .testimonial-left p {
-      font-size: 14px;
-      color: #555;
-    }
+.testimonial-left p {
+    font-size: 14px;
+    color: #555;
+}
 
-    .testimonial-right {
-      flex: 2;
-      padding: 20px;
-      position: relative;
-    }
+.testimonial-right {
+    flex: 2;
+    padding: 20px;
+    position: relative;
+}
 
-    .testimonial-right h2 {
-      font-size: 22px;
-      margin-bottom: 5px;
-    }
+.testimonial-right h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
 
-    .testimonial-right small {
-      display: block;
-      margin-bottom: 15px;
-      color: #666;
-    }
+.testimonial-right small {
+    display: block;
+    margin-bottom: 15px;
+    color: #666;
+}
 
-    .stars {
-      position: absolute;
-      top: 154px;
-      right: 30px;
-    }
+.stars {
+    position: absolute;
+    top: 154px;
+    right: 30px;
+}
 
-    .stars span {
-      color: gold;
-      font-size: 18px;
-    }
+.stars span {
+    color: gold;
+    font-size: 18px;
+}
 
-    .testimonial-right p {
-      font-size: 18px;
-      color: #444;
-      line-height: 1.6;
-    }
+.testimonial-right p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
 
-    /* Navigation buttons */
-    .nav-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: #fff;
-      border: none;
-      width: 40px;
-      height: 40px;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      cursor: pointer;
-      font-size: 20px;
-    }
+/* Navigation buttons */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 20px;
+}
 
-    .nav-btn:hover {
-      background: #f3f3f3;
-    }
+.nav-btn:hover {
+    background: #f3f3f3;
+}
 
-    .prev {
-      left: -50px;
-    }
+.prev {
+    left: -50px;
+}
 
-    .next {
-      right: -50px;
-    }
+.next {
+    right: -50px;
+}
 
-    /* Dots */
-    .dots {
-      text-align: center;
-      margin-top: 15px;
-    }
+/* Dots */
+.dots {
+    text-align: center;
+    margin-top: 15px;
+}
 
-    .dot {
-      height: 10px;
-      width: 10px;
-      margin: 0 5px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      cursor: pointer;
-    }
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
 
-    .dot.active {
-      background-color: #ff0066;
-    }
-    .testimonial-right i{
-        font-size: 70px;
-        margin-bottom: 50px;
-    }
-    .testimonial-right .testimonial-services-heading-style{
+.dot.active {
+    background-color: #ffa532;
+}
+
+.testimonial-right i {
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+.testimonial-right .testimonial-services-heading-style {
     font-size: 40px;
     font-weight: 500;
 }
+
 /* TESTIMONIAL CSS END */
+.pricing-main-box {
+    width: 100%;
+    /* border: 2px solid orangered; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pricing-sub-box {
+    width: 400px;
+    /* border: 2px solid orchid; */
+    padding: 20px 15px;
+    box-shadow: 4px 4px 10px #c3c0c0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.pricing-sub-box:hover {
+    transform: translateY(-5px);
+}
+
+.pricing-sub-box-main-heading-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ffa52f;
+    margin-bottom: 30px;
+}
+
+.pricing-sub-box-main-heading-box-left {
+    width: 70%;
+    /* border: 2px solid greenyellow; */
+}
+
+.pricing-sub-box-main-heading-box-right {
+    width: 25%;
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.pricing-services-heading {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.pricing-rate {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffa72c;
+}
+
+.pricing-btn-style {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    box-shadow: 4px 4px 10px #cfcaca;
+    transition: all .4s ease-in-out;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.pricing-btn-style:hover {
+    background: #fba92a !important;
+    color: white !important;
+    transform: translateY(-5px);
+}
+
+.deadline-and-revisions-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dead-line-text {
+    margin-bottom: 0px;
+}
+.contact-main-box{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.contact-main-box-left{
+    width: 40%;
+    /* border: 2px solid olive; */
+    padding: 50px 50px;
+    box-shadow: 4px 4px 10px #bec3c5;
+    border-radius: 10px;
+}
+.contact-main-box-right{
+    width: 55%;
+    /* border: 2px solid orchid; */
+    box-shadow: 4px 4px 10px #bec3c5;
+    padding: 50px 50px;
+    border-radius: 10px;
+}
+.contact-images-box{
+    width: 100%;
+    height: 353px;
+    overflow: hidden;
+}
+.contact-image {
+    width: 100%;
+}
+.phone-number a{
+    color: black;
+    text-decoration: none;
+}
+.phone-number a:hover{
+    color: #d11414;
+}
+.my-name-heading {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.my-title {
+    font-weight: 500;
+}
+.phone-number {
+    margin-bottom: 0px;
+}
+.input-box-style{
+    width: 100% !important;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: white;
+    border: 1px solid black;
+    outline: black;
+    border-radius: 5px;
+}
+.Input-text-style{
+    display: block !important;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black !important;
+}
+textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    max-width: 100px;
+    border: 1px solid black;
+    outline: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.form-btn-style {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 25px;
+    background: #f1f1f1;
+    color: #ffa628;
+    border: none;
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+}
+.form-btn-style:hover{
+    background: #ffa628;
+    color: white;
+    transform: translateY(-5px);
+}
+.extra-margin-portfolio{
+    margin-top: 100px !important;
+}
+#portfolio-hero{
+    margin-top: 100px;
+    background: linear-gradient(90deg, #ffa628, #b96f07);
+    height: 400px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-hero-main-box{
+    width: 100%;
+    /* border: 2px solid orangered; */
+}
+.portfolio-hero-main-heading{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: start;
+}
+.portfolio-image-with-order-form-main-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio-image-with-order-form-main-box-left{
+    width: 60%;
+    /* border: 2px solid orchid; */
+}
+.portfolio-main-image-box{
+    width: 100%;
+    height: 400px;
+    /* border: 2px solid orangered; */
+    overflow: hidden;
+}
+.portfolio-main-image {
+    width: 100%;
+}
+.sub-heading-style-portfolio {
+    font-size: 40px;
+    margin-top: 30px;
+}
+.portfolio-image-with-order-form-main-box-right{
+    width: 35%;
+    /* border: 2px solid orchid; */
+}
+.portfolio-image-with-order-form-main-box-right-order-form-box{
+    width: 100%;
+    /* background: #9d6814; */
+    box-shadow: 4px 4px 10px black;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.edit-portfolio-select-tag {
+    width: 100% !important;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: white;
+    border: 1px solid black;
+    outline: black;
+    border-radius: 5px;
+}
+.order-heading-detail-protfolio-page {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.portfolio-main-box-sub-box a{
+    color: black;
+    text-decoration: none;
+}
+section#footer {
+    padding: 15px;
+}
+.footer-main-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hire-me-add-margin-top{
+    margin-top: 100px;
+}
+.view-all-portfolio-btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.view-all-portfolio-btn-box a {
+    font-size: 25px;
+    background: #ffa628;
+    padding: 12px 60px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.client-reviews-for-project{
+    width: 100%;
+    /* border: 2px solid orangered; */
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.client-reviews-for-project-left-box{
+    width: 150px;
+    height: 150px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 5px;
+}
+.client-reviews-for-project-right-box{
+    width: 618px;
+    /* border: 2px solid orchid; */
+    padding-left: 20px;
+}
+.portfolio-reviews-image{
+    width: 100%;
+}
+.portfolio-client-rating-box {
+    width: 100%;
+}
+.portfolio-client-rating-box i {
+    color: #ffa628;
+    font-size: 20px;
+}
+.portfolio-client-name {
+    font-size: 30px;
+    font-weight: 500;
+}
+.portfolio-client-reviews-description {
+    margin: 0px;
+    margin-top: 5px;
+}
+.platform-project-done {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.portfolio-website-btn-box{
+    width: 100%;
+    /* border: 2px solid orchid; */
+    margin-top: 30px;
+    gap: 20px;
+    display: flex;
+}
+.contac-us-btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
 /* Hero Section End  */
 /* Main Section End  */
